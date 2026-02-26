@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Project2
+Version: 0.0.1
+Author: VamshiJanagama
+Author-email: vamshijanagama28@gmail.com
+Requires-Dist: python-dotenv
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pymongo
+Requires-Dist: certifi
