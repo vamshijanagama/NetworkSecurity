@@ -2,20 +2,20 @@ from setuptools import find_packages,setup
 from typing import List
 
 def get_requirements()->List[str]:
-    returnuirement_lst:List[str] = []
+    requirement_lst:List[str] = []
     try:
         with open('requirements.txt') as file:
             # Read Line from files
             lines = file.readlines()
 
             for line in lines:
-                returnuirement = line.strip()
-                if returnuirement and returnuirement != "-e .":
-                    returnuirement_lst.append(returnuirement)
+                requirement = line.strip()
+                if requirement and requirement != "-e .":
+                    requirement_lst.append(requirement)
     except FileNotFoundError:
         print("requiremnt.txt not found")
 
-    return returnuirement_lst
+    return requirement_lst
 
 setup(
     name="Project2",
